@@ -124,7 +124,7 @@ document.getElementById("Player_2").innerHTML += '<img src="'+ Location[number] 
 }
 //Tuấn---------------------------------------------------------
 
-//Sơn---------------------------------------------------------
+//Sơn was here!---------------------------------------------------------
 Bang_chung[0] = "Location/Location_01.jpg"
 Bang_chung[1] = "Location/Location_02.jpg"
 Bang_chung[2] = "Location/Location_03.jpg"
@@ -238,10 +238,49 @@ document.getElementById("Player_8").innerHTML += '<img src="'+ Location[number] 
 }
 //Đăng---------------------------------------------------------
 
+
+
+}
+
+
+//AUDIO MANAGER
+var phaAn = new Audio("Audio/Pha_an_1.mp3"); 
+var failAudio = new Audio("Audio/Fail.mp3"); 
+var correctAudio = new Audio("Audio/Correct.mp3"); 
+function playMusic(name) {
+    name.play();
+}
+function pauseMusic(name) {
+    name.pause();
+}
+function resetMusic(name) {
+    name.currentTime=0;
+    name.play();
 }
 
 </script>
 <body style="width: 900px;">
+
+<div class="navbar">
+    <h2>Audio Manager</h2>
+    <b>Judgement!</b>
+    <div class="audio_changer">
+        <button class="audio_buttons" onclick="playMusic(phaAn)"> Play </button>
+        <button class="audio_buttons" onclick="pauseMusic(phaAn)"> Pause </button>
+        <button class="audio_buttons" onclick="resetMusic(phaAn)"> Reset </button>
+    </div>
+    <b>Correct!</b>
+    <div class="audio_changer">
+        <button class="audio_buttons" onclick="playMusic(correctAudio)"> Play </button>
+    </div>
+    <b>Wrong LOL!</b>
+    <div class="audio_changer">
+        <button class="audio_buttons" onclick="playMusic(failAudio)"> Play </button>
+    </div>
+    <h1>Credit: PzonTruong</h1>
+</div>
+
+
 <center><h2 style="color:rgb(0, 0, 0)"> Deception_random_card </h2></center>
 <h4> Click the button to random Cause_of_death, Location, Hint </h4>
 <!-- call user-defined getRandomImage function to generate image -->  
