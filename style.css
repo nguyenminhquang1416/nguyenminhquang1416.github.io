@@ -1,0 +1,28 @@
+*{
+    margin: auto;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+}
+div.subtitle p{
+    margin-top: 50px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+}
+h4{
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+}
+button{
+    margin-top: 24px;
+    padding: 16px 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
